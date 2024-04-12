@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form action="/aaa" method="">
+        <fieldset>
+            <legend>主要信息</legend>
+            输入框：<input type="text" name="name"> <br>
+            禁用：<input type="text" disabled> <br>
+            密码：  <input type="password" name="pwd"> <br> 
+        </fieldset>
+        
+        单选框：
+        <label>
+            <input type="radio" name="gender" value="1" checked> 单选1
+        </label>
+         <input type="radio" name="gender" value="2" id="two">
+         <label for="two">单选2 </label> <br>
+         复选框：
+         <input type="checkbox" name="ck" value="1" checked> 复选1
+         <input type="checkbox" name="ck" value="2"> 复选2
+         <input type="checkbox" name="ck" value="3"> 复选3
+         <input type="checkbox" name="ck" value="5" disabled> 禁用
+         <br>
+         文本域：<textarea name="other" cols="10" rows="3"></textarea>
+         <br>
+         下拉框：
+         <select name="se">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4" disabled>4</option>
+         </select> <br>
+
+         禁用下拉框：
+         <select name="se1" disabled>
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4" disabled>4</option>
+         </select> <br>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="abc" value="123">
+        <button>确认</button>
+        <input type="submit" value="input确认">
+        <input type="reset">
+        <button type="reset">reset重置</button>
+        <button type="button">普通按钮</button>
+        <button disabled>禁用提交</button>
+
+        <hr>
+        label 
+        <hr>
+        <label for="account">label: </label>
+        <input type="text" id="account">
+    </form>
+</body>
+</html>
