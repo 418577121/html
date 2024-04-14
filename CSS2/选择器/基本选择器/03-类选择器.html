@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>类选择器</title>
+    <style>
+      .top {
+        color: red;
+      }
+      .footer {
+        color: violet;
+      }
+      .class1 {
+        color: red;
+      }
+      .class2 {
+        color: aquamarine;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="top">我是上面p</p>
+    <p class="top">我是上面p</p>
+    <p class="top">我是上面p</p>
+    <p class="top">我是上面p</p>
+    <p class="top">我是上面p</p>
+    <!-- class2, 后面的会被覆盖,只生效前面的 -->
+    <h1 class="class1" class="class2">两个class</h1>
+
+    <h1 class="class1 class2">正确的使用两个class</h1>
+
+    <hr />
+
+    <p class="footer">我是下面p</p>
+    <p class="footer">我是下面p</p>
+    <p class="footer">我是下面p</p>
+    <p class="footer">我是下面p</p>
+    <p class="footer">我是下面p</p>
+    <p class="footer">我是下面p</p>
+  </body>
+</html>

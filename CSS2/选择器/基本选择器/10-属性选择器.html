@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>属性选择器</title>
+    <style>
+      [title] {
+        font-size: 40px;
+      }
+      [title="apropertes2"] {
+        color: aqua;
+      }
+      [title^="b"] {
+        color: blue;
+      }
+      [title$="0"] {
+        color: yellow;
+      }
+      [title*="u"] {
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div title="propertes1">属性选择器测试1</div>
+    <div title="apropertes2">属性选择器测试2</div>
+    <div title="bpropertes2">属性选择器测试3</div>
+    <div title="bpropertes0">属性选择器测试1</div>
+    <div title="uuu">属性选择器测试1</div>
+  </body>
+</html>

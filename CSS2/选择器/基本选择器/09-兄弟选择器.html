@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>兄弟选择器</title>
+    <style>
+      /* + 往下找第一个 */
+      p + p {
+        color: red;
+      }
+      h2 ~ h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>11111</p>
+      <p>11111</p>
+      <h1>222</h1>
+      <p>11111</p>
+      <p>11111</p>
+      <p>11111</p>
+    </div>
+
+    <hr />
+    <div>
+      <h2>3333</h2>
+      <h3>11</h3>
+      <h2>3333</h2>
+      <h2>3333</h2>
+      <h2>3333</h2>
+      <h1>1111</h1>
+      <h2>3333</h2>
+    </div>
+  </body>
+</html>

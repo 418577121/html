@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>样式表优先级</title>
+    <link rel="stylesheet" href="./test03.css" />
+  </head>
+  <body>
+    <!-- 行内样式表 > 内部样式表 = 外部样式表 -->
+    <h1 style="color: red">样式表优先级</h1>
+    <h1>外部样式表和内部样式表优先级</h1>
+
+    <style>
+      h1 {
+        color: yellow;
+      }
+    </style>
+  </body>
+</html>
