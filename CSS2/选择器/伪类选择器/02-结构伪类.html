@@ -5,19 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>结构伪类</title>
     <style>
+      /* 所有子元素 */
       div > p:first-child {
         color: red;
+      }
+      div > p:last-child {
+        color: green;
+      }
+      div > p:nth-child(2n) {
+        color: aqua;
+      }
+
+      /* 指定类型子元素 */
+      div > p:first-of-type {
+        font-size: 50px;
+      }
+      div > p:last-of-type {
+        font-size: 60px;
+      }
+      :root {
+        background-color: yellow;
       }
     </style>
   </head>
   <body>
     <div>
-      <span>我是span</span>
+      <span>第一个span</span>
       <p>测试1</p>
       <p>测试2</p>
       <p>测试3</p>
+      <span>这是span</span>
       <p>测试4</p>
       <p>测试5</p>
+      <span>最后一个span</span>
+    </div>
+    <hr>
+
+    <div>
+      <span>span1</span>
+      <p>p1111111111</p>
+      <p>p2222222222</piv>
+      <p>p3333333333</p>
+      <p>p4444444444</p>
+      <span>span2</span>
+
     </div>
   </body>
 </html>

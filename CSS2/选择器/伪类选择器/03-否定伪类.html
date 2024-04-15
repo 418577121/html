@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>否定伪类</title>
+    <style>
+        /* 排除 */
+        div>p:not(:first-child) {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+        <p>ppppppppppp</p>
+    </div>
+</body>
+</html>
