@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格属性</title>
+    <style>
+        table {
+            border: 1px yellow solid;
+            width: 500px;
+            table-layout: fixed;
+            /* 单元格间距 */
+            border-spacing: 0px;
+            /* 合并相邻单元格边框 */
+            border-collapse: collapse; 
+            /* 隐藏没有内容单元格 */
+            empty-cells: hide;
+            /* 表格标题 */
+            caption-side: bottom;
+        }
+        td,th {
+            border: 1px green solid;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>人员信息</caption>
+        <thead>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>政治面貌</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>12</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>12</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>12</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>12</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

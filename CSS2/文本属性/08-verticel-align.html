@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verticel-align</title>
+    <!-- 不能控制块元素 -->
+    <style>
+        div {
+            font-size: 100px;
+            height: 300px;
+            background-color: skyblue;
+        }
+        span {
+            font-size: 40px;
+            background-color: orange;
+            /* vertical-align: baseline; */
+            /* vertical-align: top; */
+            vertical-align: middle;
+        }
+        img {
+            height: 150px;
+            /* vertical-align: middle; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        verticel-alitnx <span>这是span</span>
+    </div>
+    <hr>
+    <div>
+        verticel-alitnx <img src="./shuai.png" alt="">
+    </div>
+</body>
+</html>
